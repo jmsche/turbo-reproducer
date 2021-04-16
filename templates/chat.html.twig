@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Turbo Mercure reproducer</title>
+        {{ encore_entry_link_tags('app') }}
+        {{ encore_entry_script_tags('app') }}
+    </head>
+    <body>
+        <h1>Turbo Mercure reproducer</h1>
+
+        <div id="messages" {{ turbo_stream_listen('chat') }}>
+        </div>
+    </body>
+</html>
